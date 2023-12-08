@@ -1,17 +1,21 @@
 <template>
 
     <div>
-        <Header />
-     <Swiper />
+      <Header /> 
+        <Swiper />
+        <Footer />
     </div>
 </template>
 <script>
+import Header from "@/components/Header.vue"
 import Swiper from "@/components/Swiper.vue"
-import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+
 export default {
     components: {
+      Header,
       Swiper,
-       Header,
+      Footer,
     }
 }
 </script>

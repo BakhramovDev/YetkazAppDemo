@@ -8,7 +8,7 @@
                     </h1>
                 </div>
                 <form submit.prevent>
-                    <input class="header_search_input" type="text" placeholder="Qidiruv">
+                    <input class="header_search_input" type="text" placeholder="Qidiruv...">
                 </form>
             </nav>
         </div>
@@ -21,9 +21,9 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 60px;
+        height: 50px;
         background-color: white;
-        /* box-shadow: 0px 11px 8px 9px rgba(32, 30, 41, 0.298); */
+        border-bottom: 2px solid #F09C2C;
 
     }
     nav{
@@ -32,23 +32,26 @@
         justify-content: center;
         width: 95%;
         height: 95%;
+        /* border: 1px solid red; */
+
     }
     .header_search_input{
-        min-width: 300px;
+        width:300px ;
         height: 25px;
         border: none;
         border-radius: 5px;
-        outline: none;
+        outline-color:#F09C2C;
         padding: 3px;
         background-color: rgb(232, 231, 231);
         
     }
     .header_search_input::placeholder{
-        color: rgb(56, 56, 56);
+        color: #008763;
         font-weight: 800;
     }
     .logo{
         display: none;
+        color: #008763;
     }
     @media(min-width:600px){
         .logo{
