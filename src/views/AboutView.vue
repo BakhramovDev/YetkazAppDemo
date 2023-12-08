@@ -5,5 +5,6 @@
     <h1>
       yangi codlar
     </h1>
+    <h5> Codes </h5>
   </div>
 </template>
