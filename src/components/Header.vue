@@ -40,13 +40,13 @@
         height: 25px;
         border: none;
         border-radius: 5px;
-        outline-color:#F09C2C;
+        outline-color:#008763;
         padding: 3px;
         background-color: rgb(232, 231, 231);
         
     }
     .header_search_input::placeholder{
-        color: #008763;
+        color: #0000004a;
         font-weight: 800;
     }
     .logo{
