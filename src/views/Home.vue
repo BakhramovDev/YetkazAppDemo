@@ -5,8 +5,12 @@
         <Header /> 
         <Swiper />
         <productsFloorOne />
+<<<<<<< HEAD
         <MarketsFloor />
         <textSwiper />
+=======
+        <Restaurants />
+>>>>>>> 377219b65910277a26b9381f2537e9d724045e78
         <Footer />
     </div>
     </div>
@@ -20,6 +24,7 @@ import textSwiper from '@/components/textSwiper.vue'
 import MarketsFloor from '@/components/MarketsFloor.vue'
 
 import Footer from '@/components/Footer.vue'
+import Restaurants from '@/components/Restaurants.vue'
 
 
 export default {
@@ -30,6 +35,7 @@ export default {
       MarketsFloor,
       textSwiper,
       Footer,
+      Restaurants
     }
 }
 </script>
