@@ -3,9 +3,7 @@
         <div class="header">
             <nav>
                 <div class="logo">
-                    <h1>
-                        Yetkaz
-                    </h1>
+                    <img src="@/assets/Logo_header.png" alt="">
                 </div>
                 <form submit.prevent>
                     <input class="header_search_input" type="text" placeholder="Qidiruv...">
@@ -25,6 +23,9 @@
         background-color: white;
         border-bottom: 2px solid #F09C2C;
 
+    }
+    .logo img{
+        max-width: 50px;
     }
     nav{
         display: flex;

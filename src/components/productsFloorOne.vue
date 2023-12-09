@@ -5,6 +5,7 @@
         speed="100"
         loop="true"
         class="swiper"
+        space-between="10"
       >
         <swiper-slide
           ><img class="image" src="@/assets/swiper1.webp" alt="img" />

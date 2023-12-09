@@ -21,6 +21,7 @@
         speed="100"
         loop="true"
         class="swiper"
+        space-between="10"
       >
         <swiper-slide
           ><router-link class="product" to="/"><h4>❤️Lorem ipsum dolor sit</h4></router-link>
@@ -73,25 +74,27 @@
         font-size: 30px;
     }
     .product h4{
+        white-space: nowrap;
         text-align: center;
-        padding: 10px;
-        margin: 0 5px;
-        background-color: rgb(255, 255, 255);
+        padding: 5px 10px;
+        background-color: rgb(162, 160, 160);
         border-radius: 10px;
         color: black;
     }
-    .swiper_slide{
-        background-color: red;
-    }
+    
     .product p{
         font-size: 16px;
         text-align: center;
         padding: 5px;
     }
 
-  .home .swiper {
+  .swiper {
+    display: none;
     overflow: hidden;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   @media (min-width: 320px) {
     .home .swiper {
