@@ -12,10 +12,12 @@
                     </li>
 
                     <li class="nav_link"> 
-                        <h3>
+                        <div class="nav_right">
+                            <h3>
                             Hammasi 
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
                         </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                        </div>
 
                     </li>
                 </ul>
@@ -23,26 +25,28 @@
         </header>
 
         <div class="home">
-      <swiper-container
-        slides-per-view="1.5"
-        speed="100"
-        loop="true"
-        class="swiper"
-      >
-        <swiper-slide
-          >  <div class="product"><router-link to="/"><img src="../assets/swiper2.webp" alt=""></router-link>
-            <p>Lorem ipsum dolor sit.</p></div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="product"><router-link to="/"><img src="../assets/swiper2.webp" alt=""></router-link>
-            <p>Lorem ipsum dolor sit.</p></div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="product"><router-link to="/"><img src="../assets/swiper2.webp" alt=""></router-link>
-            <p>Lorem ipsum dolor sit.</p></div>
-        </swiper-slide>
-      </swiper-container>
-    </div>
+       
+       <!-- 1 -->
+       <router-link to="/"><div class="box"><img src="../assets/img1.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 2 -->
+       <router-link to="/"><div class="box"><img src="../assets/img2.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 3 -->
+       <router-link to="/"><div class="box"><img src="../assets/img3.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 4 -->
+       <router-link to="/"><div class="box"><img src="../assets/img4.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 5 -->
+       <router-link to="/"><div class="box"><img src="../assets/img5.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 6 -->
+       <router-link to="/"><div class="box"><img src="../assets/img1.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 7 -->
+       <router-link to="/"><div class="box"><img src="../assets/img2.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 8 -->
+       <router-link to="/"><div class="box"><img src="../assets/img3.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 9 -->
+       <router-link to="/"><div class="box"><img src="../assets/img4.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+       <!-- 10 -->
+       <router-link to="/"><div class="box"><img src="../assets/img5.jpg" alt=""><p>Lorem, ipsum dolor.</p></div></router-link>
+   </div>
 
     
     </div>
@@ -73,30 +77,42 @@
         align-items: center; 
         justify-content: center;
     }
-    .product img{ 
+    .nav_right{
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home{
+        display: flex;
         width: 100%;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-    }
-    .product{
-        margin: 0 5px;
-        background-color: white;
-        border-radius: 10px;
-    }
-    .product p{
-        font-size: 16px;
-        text-align: center;
-        padding: 5px;
-    }
+        display: flex;
+        overflow-x: scroll;
+        overflow-x: auto;
 
-  .home .swiper {
-    overflow: hidden;
-    padding: 10px;
-  }
-  @media (min-width: 320px) {
-    .home .swiper {
-      overflow: hidden;
-    }
-  }
+      }
+      .home::-webkit-scrollbar{
+          display: block;
+      }
+      .home:-webkit-scrollbar-thumb{
+          display: block;
+      }
+      .box{
+        margin: 0 10px;
+        background-color: #F09C2C;
+        padding-bottom: 10px;
+        border-radius: 10px;
+      }
+      .box img{
+        height: 90px;
+        width: 180px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0 ;
+
+      }
+      .box p{
+        font-size: 20px;
+        text-align: center ;
+        color: rgb(255, 255, 255);
+      }
 </style>

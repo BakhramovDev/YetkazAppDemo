@@ -1,5 +1,6 @@
 <template>
-    <div class="market_floor">
+    <div>
+
         <header>
             <nav>
                 <ul class="nav_item">
@@ -16,39 +17,33 @@
         </header>
 
         <div class="home">
-      <swiper-container
-        slides-per-view="1.5"
-        speed="100"
-        loop="true"
-        class="swiper"
-        space-between="10"
-      >
-        <swiper-slide
-          ><router-link class="product" to="/"><h4>❤️Lorem ipsum dolor sit</h4></router-link>
-        
-        </swiper-slide>
-        <swiper-slide>
-            <router-link class="product" to="/"><h4>Lorem ipsum dolor sit</h4></router-link>
-        </swiper-slide>
-        <swiper-slide>
-            <router-link class="product" to="/"><h4>Lorem ipsum dolor sit</h4></router-link>
-        </swiper-slide>
-        <swiper-slide>
-            <router-link class="product" to="/"><h4>Lorem ipsum dolor sit</h4></router-link>
-        </swiper-slide><swiper-slide>
-            <router-link class="product" to="/"><h4>Lorem ipsum dolor sit</h4></router-link>
-        </swiper-slide><swiper-slide>
-            <router-link class="product" to="/"><h4>Lorem ipsum dolor sit</h4></router-link>
-        </swiper-slide>
-      </swiper-container>
-    </div>
-
-    
+       <!-- 1 -->
+       <router-link to="/" class="box"><h3>❤️Lorem, ipsum dolor</h3></router-link>
+       <!-- 2 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 3 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 4 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 5 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 6 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 7 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 8 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 9 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <!-- 10 -->
+       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+   </div>
     </div>
 </template>
 
 <style scoped>
-    header{
+
+header{
         margin: 20px 0;
         display: flex;
         align-items: center;
@@ -73,32 +68,32 @@
         justify-content: center;
         font-size: 30px;
     }
-    .product h4{
-        white-space: nowrap;
-        text-align: center;
-        padding: 5px 10px;
-        background-color: rgb(162, 160, 160);
-        border-radius: 10px;
-        color: black;
-    }
-    
-    .product p{
-        font-size: 16px;
-        text-align: center;
-        padding: 5px;
-    }
+        .home{
+        display: flex;
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        overflow-x: auto;
 
-  .swiper {
-    display: none;
-    overflow: hidden;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  @media (min-width: 320px) {
-    .home .swiper {
-      overflow: hidden;
-    }
-  }
+      }
+      .home::-webkit-scrollbar{
+          display: none;
+      }
+      .home:-webkit-scrollbar-thumb{
+          display: none;
+      }
+      .box{
+        margin: 0 10px;
+        margin-bottom:20px;
+      }
+      .box h3{
+        border-radius: 10px;
+        padding: 10px;
+        width: 240px;
+        background-color: #F09C2C;
+
+        font-size: 20px;
+        text-align: center ;
+        color: rgb(255, 255, 255);
+      }
 </style>

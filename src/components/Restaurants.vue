@@ -445,7 +445,6 @@
 .card {
   margin: 0 10px;
   border-radius: 15px;
-  border: 1px solid;
   background: #fff;
 }
 .card .card_img img {
@@ -498,7 +497,7 @@
   padding-left: 5px;
 }
 .cost .btn {
-  background: green;
+  background: #00c792;
   display: flex;
   align-items: center;
   gap: 10px;
