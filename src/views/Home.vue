@@ -10,6 +10,9 @@
         <Restaurants />
         <Footer />
     </div>
+    <h1>
+      Mazzard
+    </h1>
     </div>
 </template>
 <script>
@@ -37,6 +40,5 @@ export default {
 <style scoped>
   .home_wrapper{
     height: 114vh;
-    background-color: #00876324;
   }
 </style>

@@ -89,7 +89,7 @@
   padding-left: 5px;
 }
 .cost .btn {
-  background: green;
+  background: #00c792;
   display: flex;
   align-items: center;
   gap: 10px;

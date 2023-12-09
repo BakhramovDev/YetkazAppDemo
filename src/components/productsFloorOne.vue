@@ -1,43 +1,54 @@
 <template>
     <div class="home">
-      <swiper-container
-        slides-per-view="1.5"
-        speed="100"
-        loop="true"
-        class="swiper"
-      >
-        <swiper-slide
-          ><img class="image" src="@/assets/swiper1.webp" alt="img" />
-        </swiper-slide>
-        <swiper-slide>
-          <img class="image" src="@/assets/swiper2.webp" alt="img"
-        /></swiper-slide>
-        <swiper-slide>
-          <img class="image" src="@/assets/swiper3.webp" alt="img"
-        /></swiper-slide>
-      </swiper-container>
-    </div>
+       
+            <!-- 1 -->
+            <router-link to="/"><div class="box"><img src="../assets/img1.jpg" alt=""></div></router-link>
+            <!-- 2 -->
+            <router-link to="/"><div class="box"><img src="../assets/img2.jpg" alt=""></div></router-link>
+            <!-- 3 -->
+            <router-link to="/"><div class="box"><img src="../assets/img3.jpg" alt=""></div></router-link>
+            <!-- 4 -->
+            <router-link to="/"><div class="box"><img src="../assets/img4.jpg" alt=""></div></router-link>
+            <!-- 5 -->
+            <router-link to="/"><div class="box"><img src="../assets/img5.jpg" alt=""></div></router-link>
+            <!-- 6 -->
+            <router-link to="/"><div class="box"><img src="../assets/img1.jpg" alt=""></div></router-link>
+            <!-- 7 -->
+            <router-link to="/"><div class="box"><img src="../assets/img2.jpg" alt=""></div></router-link>
+            <!-- 8 -->
+            <router-link to="/"><div class="box"><img src="../assets/img3.jpg" alt=""></div></router-link>
+            <!-- 9 -->
+            <router-link to="/"><div class="box"><img src="../assets/img4.jpg" alt=""></div></router-link>
+            <!-- 10 -->
+            <router-link to="/"><div class="box"><img src="../assets/img5.jpg" alt=""></div></router-link>
+        </div>
+    
   </template>
   
   <style scoped>
-  .home .image {
-    object-fit: cover;
-  }
-  .home .swiper {
-    overflow: hidden;
-    padding: 10px;
-  }
-  @media (min-width: 320px) {
-    .home .swiper {
-      overflow: hidden;
-    }
-    .home .image {
-      width: 200px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 10px;
-  
-    }
-  }
+      .home{
+        display: flex;
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        overflow-x: auto;
+
+      }
+      .home::-webkit-scrollbar{
+          display: block;
+      }
+      .home:-webkit-scrollbar-thumb{
+          display: block;
+      }
+      .box{
+        margin: 0 10px;
+      }
+      .box img{
+        height: 90px;
+        width: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+
+      }
   </style>
   

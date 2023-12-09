@@ -22,8 +22,7 @@
         justify-content: center;
         width: 100%;
         height: 50px;
-        background-color: white;
-        border-bottom: 2px solid #F09C2C;
+        background-color: #00c792;
 
     }
     nav{
@@ -36,8 +35,9 @@
 
     }
     .header_search_input{
-        width:300px ;
-        height: 25px;
+        font-size: 20px;
+        width:350px ;
+        height: 35px;
         border: none;
         border-radius: 5px;
         outline-color:#008763;
@@ -46,6 +46,7 @@
         
     }
     .header_search_input::placeholder{
+        font-size: 20px;
         color: #0000004a;
         font-weight: 800;
     }
