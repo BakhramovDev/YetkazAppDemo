@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // <<<<<<< HEAD
 // import HomeView from '../views/Index.vue'
 // =======
-import HomeView from '../views/index.vue'
+import HomeView from '../views/Index.vue'
 // >>>>>>> 5718f525d21a9c3357116ec5cb5796737e137fca
 
 const routes = [

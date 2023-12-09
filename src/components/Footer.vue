@@ -69,6 +69,7 @@
 <style scoped>
 footer{
     position: fixed;
+    z-index: 50;
     bottom: 0;
     left: 0;
     display: flex;
