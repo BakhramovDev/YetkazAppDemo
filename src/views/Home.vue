@@ -4,6 +4,7 @@
         <Header /> 
         <Swiper />
         <productsFloorOne />
+        <Restaurants />
         <Footer />
     </div>
 </template>
@@ -12,6 +13,7 @@ import Header from "@/components/Header.vue"
 import Swiper from "@/components/Swiper.vue"
 import productsFloorOne from '@/components/productsFloorOne.vue'
 import Footer from '@/components/Footer.vue'
+import Restaurants from '@/components/Restaurants.vue'
 
 
 export default {
@@ -20,6 +22,7 @@ export default {
       Swiper,
       productsFloorOne,
       Footer,
+      Restaurants
     }
 }
 </script>
