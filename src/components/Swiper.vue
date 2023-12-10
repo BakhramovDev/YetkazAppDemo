@@ -2,10 +2,12 @@
   <div class="home">
     <swiper-container
       slides-per-view="1"
-      speed="100"
+      autoplay="200"      
+      speed="800"
       loop="true"
       class="swiper"
       space-between="10"
+      autoplayDisableOnInteraction="false"
     >
       <swiper-slide
         ><img class="image" src="@/assets/swiper1.webp" alt="img" />
@@ -21,17 +23,15 @@
 </template>
 
 <style scoped>
-.home{
+.home {
   padding: 0 30px;
 }
 .home .image {
   max-width: 320px;
-  width: 100% ;
+  width: 100%;
   height: 100px;
   object-fit: cover;
   border-radius: 12px;
-
- 
 }
 .home .swiper {
   margin: 0 auto;
@@ -42,6 +42,5 @@
   .home .swiper {
     overflow: hidden;
   }
-
 }
 </style>

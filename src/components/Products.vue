@@ -9,7 +9,7 @@
         <div class="card" @click="openModal">
           <ProductCard />
         </div>
-      </div>    
+      </div>
       <div class="row">
         <div class="card" @click="openModal">
           <ProductCard />
@@ -17,7 +17,7 @@
         <div class="card" @click="openModal">
           <ProductCard />
         </div>
-      </div>    
+      </div>
       <div class="row">
         <div class="card" @click="openModal">
           <ProductCard />
@@ -25,7 +25,7 @@
         <div class="card" @click="openModal">
           <ProductCard />
         </div>
-      </div>    
+      </div>
       <div class="row">
         <div class="card" @click="openModal">
           <ProductCard />
@@ -33,7 +33,7 @@
         <div class="card" @click="openModal">
           <ProductCard />
         </div>
-      </div>    
+      </div>
       <div class="row">
         <div class="card" @click="openModal">
           <ProductCard />
@@ -41,52 +41,55 @@
         <div class="card" @click="openModal">
           <ProductCard />
         </div>
-      </div>    
+      </div>
     </div>
     <transition name="modal">
       <div v-if="isModalOpen" class="modal-container" @click="closeModal">
         <div class="modal" @click.stop>
           <div class="modal-content">
-            <!-- Your modal content goes here -->
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              quisquam impedit ipsa rem fuga quis excepturi. Fuga incidunt
-              doloremque quas, ea expedita modi cum omnis quasi nemo quidem,
-              pariatur necessitatibus. Autem, deserunt. Ad aliquid nihil quas
-              voluptate nesciunt architecto recusandae perferendis saepe id
-              deleniti ex amet, sit consequatur exercitationem reprehenderit eos
-              minima, sunt quam nam itaque molestias modi officia laboriosam.
-              Obcaecati quia ipsum amet nesciunt voluptates quam earum
-              repudiandae est modi adipisci laudantium dolore necessitatibus
-              impedit nam sint accusamus voluptatibus labore, fuga itaque neque!
-              Corporis sint eligendi quis dolore illum deserunt temporibus
-              consequatur ullam deleniti autem, ex nostrum obcaecati. Qui
-              nostrum molestias possimus animi incidunt beatae atque iusto,
-              temporibus reiciendis laudantium quidem reprehenderit suscipit
-              voluptatibus delectus voluptates? Fugit enim officia in deserunt,
-              nihil vitae iure doloribus? Ipsam debitis distinctio impedit ad
-              repellat voluptates ipsum doloremque maiores pariatur! Neque
-              placeat nostrum modi, amet ex impedit ea id dicta libero!
-              Similique quisquam quas ratione accusantium illo est, fuga
-              deleniti omnis, labore eaque magnam temporibus natus molestias
-              nobis dicta voluptas accusamus reprehenderit itaque. Eum amet
-              dolore quo architecto laborum rerum vitae quas natus iure
-              consectetur ad voluptatem autem est quod repudiandae laboriosam
-              magnam unde numquam labore hic, sit nihil nam error. Explicabo
-              molestiae exercitationem nemo quaerat dolorem sed fuga soluta cum
-              eum adipisci totam aspernatur cupiditate, laborum impedit
-              excepturi odit quae perferendis a, harum voluptatum minus commodi
-              deleniti ducimus. Reiciendis fugiat perspiciatis a sit molestiae
-              quos unde quibusdam deserunt illo animi iusto rerum earum,
-              doloribus nesciunt, illum nihil tenetur tempore dolores. Dicta,
-              cum dignissimos est eligendi quibusdam, dolores a, fuga illo ea
-              unde sed. Maxime expedita similique officiis repudiandae quasi
-              animi obcaecati quaerat facere dicta fugit officia eos harum ad
-              sequi omnis nostrum, debitis alias adipisci impedit, quis
-              provident. Eveniet id quisquam dicta culpa rem quas maiores in,
-              facilis at consectetur corporis amet!.
-            </p>
-            <button @click="closeModal">Close Modal</button>
+            <div class="close_btn">
+              <img @click="closeModal" src="@/assets/close.png" alt="img" />
+            </div>
+            <div class="modal_img">
+              <img src="@/assets/pizza.jpeg" alt="" />
+            </div>
+            <div class="product_type">
+              <h1>go`shtlik</h1>
+              <a href="#">
+                <img src="@/assets/Share.png" alt="img" />
+              </a>
+            </div>
+            <div class="about_prodct">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus assumenda dignissimos labore eos! Rerum, quisquam
+                inventore amet, autem sed repudiandae, cupiditate dolores illum
+                iste ab cum! Sit hic dignissimos fugiat vel voluptas? Culpa,
+                accusamus iure! Molestias dolor quia debitis atque, obcaecati
+                sapiente voluptas accusamus nulla nam ipsam? Sapiente, cum
+                voluptatibus.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                deserunt adipisci laboriosam et, recusandae sed libero modi.
+                Nisi est neque libero odit sapiente, aut culpa quasi numquam
+                alias, doloremque rerum.
+              </p>
+              <!-- <div class="btn">
+                <ModalBtn />
+              </div> -->
+            </div>
+            <div class="modal_btn">
+              <div class="basket">
+               <p>{{ sum }}</p>
+              </div>
+              <div class="value">             
+                <button @click="minus">-</button>
+                <p>{{count}}</p>               
+                <button @click="plus">+</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -100,6 +103,9 @@ export default {
   data() {
     return {
       isModalOpen: false,
+      sum: 15,
+      summa: 15,
+      count: 1,
     };
   },
   methods: {
@@ -113,6 +119,16 @@ export default {
       // Remove the class from the body to restore overflow
       document.body.classList.remove("modal-open");
     },
+    plus() {
+      this.sum += this.summa;
+      this.count++;
+    },
+    minus() {
+      if (this.sum > this.summa) {
+        this.sum -= this.summa;
+        this.count--;
+      }
+    },
   },
   components: {
     ProductCard,
@@ -121,16 +137,67 @@ export default {
 </script>
 
 <style scoped>
-.card_wrapper{
+.modal-content .modal_btn {
+  display: flex;
+  justify-content: space-between;
+ align-self: center;
+ margin-top: 10px;
+}
+.modal .value {
+  display: flex;
+  align-self: center;
+  gap: 10px;
+}
+
+.close_btn {
+  position: relative;
+}
+.close_btn img {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+}
+.product_type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product_type h1 {
+  font-size: 26px;
+}
+.product_type img {
+  max-width: 16px;
+}
+.about_prodct p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.modal-content .modal_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.modal-content .product_type {
+  font-size: 26px;
+}
+.modal_img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+}
+.card_wrapper {
   display: flex;
   gap: -50px;
   align-items: center;
   flex-direction: column;
 }
-.card_wrapper .row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card_wrapper .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .modal-container-enter-active,
 .modal-container-leave-active {
@@ -157,13 +224,14 @@ export default {
 
 .modal {
   height: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
   width: 100%;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  transform: translateY(30%);
+  transform: translateY(15%);
   transition: transform 1s ease-out;
+  padding-bottom: 90px;
 }
 
 .modal-enter, .modal-leave-to /* .modal-leave-active in <2.1.8 */ {
@@ -177,9 +245,5 @@ export default {
 .modal-open {
   overflow: hidden;
   transition: 0.8s;
-}
-
-button {
-  margin-top: 20px;
 }
 </style>
