@@ -68,7 +68,7 @@
 </template>
 <style scoped>
 footer{
-    box-shadow: -2px -2px 24px 10px rgba(0, 0, 0, 0.31);
+    box-shadow: -2px -2px 24px 1px rgba(59, 59, 59, 0.31);
     position: fixed;
     z-index: 50;
     bottom: 0;
@@ -78,7 +78,6 @@ footer{
     justify-content: center;
     width: 100%;
     height: 50px;
-    border-top: 5px solid #F09C2C;
     background-color: white;
 }
 nav{

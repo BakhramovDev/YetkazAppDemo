@@ -85,7 +85,7 @@ header{
           display: none;
       }
       .box{
-        margin: 0 10px;
+        margin: 0 3px;
         margin-bottom:20px;
         
       }

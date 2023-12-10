@@ -107,24 +107,20 @@
           display: none;
       }
       .box{
-        margin: 0 8px;
+        margin: 0 5px;
         background-color: #00c792;
         padding-bottom: 10px;
         border-radius: 10px;
         box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
-        border: 0.1px solid rgba(122, 122, 122, 0.48);
-
-
       }
       .box img{
-        height: 80px;
-        width: 160px;
+        height: 50px;
+        width: 120px;
         object-fit: cover;
         border-radius: 10px 10px 0 0 ;
-
       }
       .box p{
-        font-size: 15px;
+        font-size: 12px;
         text-align: center ;
         color: rgb(255, 255, 255);
         text-shadow: 3px 1px 3px rgba(43, 43, 43, 0.597);
