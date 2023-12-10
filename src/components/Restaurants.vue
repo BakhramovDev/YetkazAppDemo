@@ -444,9 +444,11 @@
   margin: 0 10px;
   border-radius: 15px;
   background: #fff;
+  padding: 15px;
 }
 .card .card_img img {
   object-fit: cover;
+  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 .card .card_title .food_name {

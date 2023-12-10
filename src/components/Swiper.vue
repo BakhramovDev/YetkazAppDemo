@@ -5,6 +5,7 @@
       speed="100"
       loop="true"
       class="swiper"
+      space-between="10"
     >
       <swiper-slide
         ><img class="image" src="@/assets/swiper1.webp" alt="img" />
@@ -20,10 +21,20 @@
 </template>
 
 <style scoped>
+.home{
+  padding: 0 30px;
+}
 .home .image {
+  max-width: 320px;
+  width: 100% ;
+  height: 100px;
   object-fit: cover;
+  border-radius: 12px;
+
+ 
 }
 .home .swiper {
+  margin: 0 auto;
   overflow: hidden;
   padding: 10px;
 }
@@ -31,11 +42,6 @@
   .home .swiper {
     overflow: hidden;
   }
-  .home .image {
-    width: 100%;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+
 }
 </style>

@@ -33,6 +33,7 @@
 }
 .card_2 h1 {
   font-size: 22px;
+  white-space: nowrap;
 }
 .card_2 p {
   font-size: 16px;
