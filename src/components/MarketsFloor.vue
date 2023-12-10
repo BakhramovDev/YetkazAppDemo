@@ -76,7 +76,6 @@
     }
     .nav_link h1{
         color: rgb(0, 0, 0);
-        text-shadow: 3px 1px 3px rgba(43, 43, 43, 0.597);
 
     }
     .nav_link h3{
@@ -84,7 +83,6 @@
         display: flex;
         align-items: center; 
         justify-content: center;
-        text-shadow: 3px 1px 3px rgba(43, 43, 43, 0.597);
     }
     .nav_right{
         width: 100px;

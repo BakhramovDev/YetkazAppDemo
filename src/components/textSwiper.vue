@@ -67,8 +67,6 @@ header{
         align-items: center; 
         justify-content: center;
         font-size: 30px;
-        color: #000000;
-        text-shadow: 3px 1px 1px rgba(43, 43, 43, 0.597);
     }
         .home{
         display: flex;

@@ -8,12 +8,12 @@
       space-between="10"
     >
       <swiper-slide
-        ><img class="image" src="@/assets/swiper1.webp" alt="img" />
+         class="swiper_slide"><img class="image" src="@/assets/swiper1.webp" alt="img" />
       </swiper-slide>
-      <swiper-slide>
+      <swiper-slide class="swiper_slide">
         <img class="image" src="@/assets/swiper2.webp" alt="img"
       /></swiper-slide>
-      <swiper-slide>
+      <swiper-slide class="swiper_slide">
         <img class="image" src="@/assets/swiper3.webp" alt="img"
       /></swiper-slide>
     </swiper-container>
@@ -22,26 +22,26 @@
 
 <style scoped>
 .home{
-  padding: 0 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.home .image {
-  max-width: 320px;
-  width: 100% ;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
-
- 
+.swiper_slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.image {
+    width: 100% ;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 .home .swiper {
   margin: 0 auto;
   overflow: hidden;
-  padding: 10px;
 }
-@media (min-width: 320px) {
-  .home .swiper {
-    overflow: hidden;
-  }
 
-}
 </style>

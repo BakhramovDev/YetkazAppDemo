@@ -68,6 +68,7 @@
 </template>
 <style scoped>
 footer{
+
     box-shadow: -2px -2px 24px 1px rgba(59, 59, 59, 0.31);
     position: fixed;
     z-index: 50;

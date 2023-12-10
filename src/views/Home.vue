@@ -11,9 +11,6 @@
       
         <Footer />
     </div>
-    <h1>
-      Mazzard
-    </h1>
     </div>
 </template>
 <script>
