@@ -37,8 +37,8 @@ export default {
 /* Modal styling */
 .button{
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 85px;
+    right: 10px;
     max-width: 130px;
     padding: 10px 15px;
     border-radius: 12px;

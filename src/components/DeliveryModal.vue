@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="wrapper">
         <div class="card">
             <div class="title">
                 <h1 class="cut">Yetkazib berishga chegirma</h1>
@@ -11,15 +11,19 @@
     </div>
 </template>
 <style scoped>
+
 .card{
+    margin-left: 10px;
+    height: 120px;
     border: 1px solid;
     background: #fff;
     max-width: 70%;
-    padding: 15px;
+    padding: 10px;
 }
  .title .cut {
+    font-size: 26px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

@@ -1,42 +1,46 @@
 <template>
   <div>
-
     <div class="About">
-    <div class="header">
-      <div class="exit_icon">
-        <router-link to="/">
-        <img src="@/assets/exit.png" alt="img" />
-        </router-link>
-      </div>
+      <div class="header">
+        <div class="exit_icon">
+          <router-link to="/">
+            <img src="@/assets/exit.png" alt="img" />
+          </router-link>
+        </div>
 
-      <div class="header_search">
-        <img src="@/assets/Share.png" alt="img" />
-        <img src="@/assets/search.png" alt="img" />
-        <img src="@/assets/information.png" alt="img" />
+        <div class="header_search">
+          <img src="@/assets/Share.png" alt="img" />
+          <img src="@/assets/search.png" alt="img" />
+          <img src="@/assets/information.png" alt="img" />
+        </div>
       </div>
-    </div>
-    <div class="home">
-      <div class="product_name">
-        <h1>{{ ProductName }}</h1>
+      <div class="home">
+        <div class="product_name">
+          <h1>{{ ProductName }}</h1>
+        </div>
+        <div class="cost">
+          <p>Minimal buyurtma miqdori <span>777</span> so`m</p>
+        </div>
       </div>
-      <div class="cost">
-        <p>Minimal buyurtma miqdori <span>777</span> so`m</p>
+      <div class="deliver">
+        <Delivery />
       </div>
-    </div>
-    <div class="deliver">
-      <Delivery />
-      
+      <div class="home_bottom">
+        <AboutModalVue />
+        <DeliveryModal />
+      </div>
+      <div class="bottom_product">
+        <Products />
+      </div>
     </div>
   </div>
-    <AboutModalVue />
-    <DeliveryModal />
-
-  </div>
-
 </template>
 <style scoped>
-.About{
+.About {
   background: #fff;
+}
+.bottom_product {
+  margin-top: 10px;
 }
 .header {
   display: flex;
@@ -60,31 +64,33 @@
   align-items: center;
   gap: 15px;
 }
-.home{
+.home {
   padding: 10px;
 }
-.home .product_name  {
+.home .product_name {
   margin: 0 auto;
 }
-.cost p{
+.cost p {
   font-size: 18px;
   color: #7c7a7a;
 }
 </style>
 <script>
-import AboutModalVue from '@/components/AboutModal.vue';
-import Delivery from '@/components/Delivery.vue';
-import DeliveryModal from '@/components/DeliveryModal.vue'
+import AboutModalVue from "@/components/AboutModal.vue";
+import Delivery from "@/components/Delivery.vue";
+import DeliveryModal from "@/components/DeliveryModal.vue";
+import Products from "@/components/Products.vue";
 export default {
   data() {
     return {
       ProductName: "Pizza",
     };
   },
-  components:{
+  components: {
     AboutModalVue,
     Delivery,
-    DeliveryModal
-  }
+    DeliveryModal,
+    Products,
+  },
 };
 </script>
