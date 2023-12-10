@@ -68,6 +68,7 @@
 </template>
 <style scoped>
 footer{
+    box-shadow: -2px -2px 24px 10px rgba(0, 0, 0, 0.31);
     position: fixed;
     z-index: 50;
     bottom: 0;
@@ -77,7 +78,7 @@ footer{
     justify-content: center;
     width: 100%;
     height: 50px;
-    border-top: 2px solid #F09C2C;
+    border-top: 5px solid #F09C2C;
     background-color: white;
 }
 nav{
@@ -99,13 +100,9 @@ nav{
     
 }
 .router svg{
-    fill: #008763;
-    transition: all 0.1s ease;
-}
-.router svg:hover{
     fill: #00c792;
-    height: 20px;
-    width: 20px;
+    transition: all 0.1s ease;
+
 }
 .router p{
     color: black;

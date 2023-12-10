@@ -47,13 +47,11 @@
     }
     .nav_item h1{
         font-weight: 400;
+        color: #00c792;
     }
     .nav_item svg{
-        fill: black;
+        fill: #00c792;
         transition: all 0.5s ease;
-    }
-    .nav_item svg:hover{
-        fill: #992828;
     }
     .unless
     {

@@ -18,25 +18,25 @@
 
         <div class="home">
        <!-- 1 -->
-       <router-link to="/" class="box"><h3>❤️Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>❤️ Sevimlilar</h3></router-link>
        <!-- 2 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Pitsa</h3></router-link>
        <!-- 3 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Salat</h3></router-link>
        <!-- 4 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Milliy taomlar</h3></router-link>
        <!-- 5 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Koktel</h3></router-link>
        <!-- 6 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Fri</h3></router-link>
        <!-- 7 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Lavash</h3></router-link>
        <!-- 8 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Kabob</h3></router-link>
        <!-- 9 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Sushi</h3></router-link>
        <!-- 10 -->
-       <router-link to="/" class="box"><h3>Lorem, ipsum dolor</h3></router-link>
+       <router-link to="/" class="box"><h3>Fast-food</h3></router-link>
    </div>
     </div>
 </template>
@@ -67,6 +67,8 @@ header{
         align-items: center; 
         justify-content: center;
         font-size: 30px;
+        color: #000000;
+        text-shadow: 3px 1px 1px rgba(43, 43, 43, 0.597);
     }
         .home{
         display: flex;
@@ -85,15 +87,19 @@ header{
       .box{
         margin: 0 10px;
         margin-bottom:20px;
+        
       }
       .box h3{
+        text-wrap: nowrap;
         border-radius: 10px;
         padding: 10px;
-        width: 240px;
-        background-color: #F09C2C;
-
+        width: fit-content;
+        background-color: #00c792;
+        box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
         font-size: 20px;
         text-align: center ;
         color: rgb(255, 255, 255);
+        border: 0.1px solid rgba(122, 122, 122, 0.48);
+        text-shadow: 3px 1px 1px rgba(85, 85, 85, 0.597);
       }
 </style>

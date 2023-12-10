@@ -32,23 +32,22 @@
         display: flex;
         overflow-x: scroll;
         overflow-x: auto;
-
+        
       }
       .home::-webkit-scrollbar{
-          display: block;
+          display: none;
       }
       .home:-webkit-scrollbar-thumb{
-          display: block;
+          display: none;
       }
       .box{
-        margin: 0 10px;
+        margin: 0 5px;
       }
       .box img{
-        height: 90px;
-        width: 180px;
+        height: 80px;
+        width: 140px;
         object-fit: cover;
         border-radius: 10px;
-
       }
   </style>
   

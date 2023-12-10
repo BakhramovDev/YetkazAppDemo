@@ -36,7 +36,6 @@
     height: 17vh;
     object-fit: cover;
     border-radius: 10px;
-
   }
 }
 </style>

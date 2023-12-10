@@ -40,5 +40,6 @@ export default {
 <style scoped>
   .home_wrapper{
     height: 114vh;
+    /* box-shadow: 5px 5px 5px -5px rgb(0, 0, 0) inset; */
   }
 </style>

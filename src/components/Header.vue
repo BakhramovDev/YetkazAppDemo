@@ -20,7 +20,7 @@
         justify-content: center;
         width: 100%;
         height: 50px;
-        background-color: #00c792;
+        background-color: #ffffff;
 
     }
     .logo img{
@@ -37,23 +37,23 @@
     }
     .header_search_input{
         font-size: 20px;
-        width:350px ;
+        width:310px ;
         height: 35px;
         border: none;
         border-radius: 5px;
-        outline-color:#008763;
+        outline-color:#00c792;
+        border:none;
         padding: 3px;
-        background-color: rgb(232, 231, 231);
-        
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 16px 1px rgba(0, 0, 0, 0.24);
     }
     .header_search_input::placeholder{
         font-size: 20px;
-        color: #0000004a;
-        font-weight: 800;
+        color: #a4a4a4ac;
     }
     .logo{
         display: none;
-        color: #008763;
+        color: #7070708f;
     }
     @media(min-width:600px){
         .logo{
