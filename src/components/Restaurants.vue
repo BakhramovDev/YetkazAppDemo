@@ -428,8 +428,6 @@
           </div>
         </div>
       </router-link>
-
-     
     </div>
   </div>
 </template>

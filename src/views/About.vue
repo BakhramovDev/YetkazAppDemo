@@ -1,5 +1,7 @@
 <template>
-  <div class="About">
+  <div>
+
+    <div class="About">
     <div class="header">
       <div class="exit_icon">
         <router-link to="/">
@@ -13,17 +15,29 @@
         <img src="@/assets/information.png" alt="img" />
       </div>
     </div>
-    <div class="home_">
+    <div class="home">
       <div class="product_name">
         <h1>{{ ProductName }}</h1>
       </div>
       <div class="cost">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolor.</p>
+        <p>Minimal buyurtma miqdori <span>777</span> so`m</p>
       </div>
     </div>
+    <div class="deliver">
+      <Delivery />
+      
+    </div>
   </div>
+    <AboutModalVue />
+    <DeliveryModal />
+
+  </div>
+
 </template>
 <style scoped>
+.About{
+  background: #fff;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -46,20 +60,31 @@
   align-items: center;
   gap: 15px;
 }
+.home{
+  padding: 10px;
+}
 .home .product_name  {
   margin: 0 auto;
 }
 .cost p{
-  font-size: 22px;
-  color: red;
+  font-size: 18px;
+  color: #7c7a7a;
 }
 </style>
 <script>
+import AboutModalVue from '@/components/AboutModal.vue';
+import Delivery from '@/components/Delivery.vue';
+import DeliveryModal from '@/components/DeliveryModal.vue'
 export default {
   data() {
     return {
       ProductName: "Pizza",
     };
   },
+  components:{
+    AboutModalVue,
+    Delivery,
+    DeliveryModal
+  }
 };
 </script>

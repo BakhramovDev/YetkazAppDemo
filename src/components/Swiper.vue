@@ -33,7 +33,7 @@
   }
   .home .image {
     width: 100%;
-    height: 17vh;
+    height: 30px;
     object-fit: cover;
     border-radius: 10px;
 

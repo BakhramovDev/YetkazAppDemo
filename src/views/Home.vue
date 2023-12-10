@@ -8,6 +8,7 @@
         <MarketsFloor />
         <textSwiper />
         <Restaurants />
+      
         <Footer />
     </div>
     <h1>
@@ -33,7 +34,8 @@ export default {
       MarketsFloor,
       textSwiper,
       Footer,
-      Restaurants
+      Restaurants,
+     
     }
 }
 </script>

@@ -24,7 +24,7 @@
 
     }
     .logo img{
-        max-width: 50px;
+        max-width: 90px;
     }
     nav{
         display: flex;
