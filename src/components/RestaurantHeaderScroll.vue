@@ -1349,7 +1349,7 @@ export default {
      }
      .box{
        margin: 0 5px;
-       text-wrap: nowrap;
+       white-space: nowrap;
        border-radius: 10px;
        padding: 10px;
        width: fit-content;
