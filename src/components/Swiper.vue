@@ -42,6 +42,7 @@
     border-radius: 10px;
   }
 .home .swiper {
+  
   margin: 0 auto;
   overflow: hidden;
 }
