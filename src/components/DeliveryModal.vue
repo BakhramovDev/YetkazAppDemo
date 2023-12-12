@@ -1,13 +1,13 @@
 <template>
     <div class="wrapper">
-        <div class="card">
+        <!-- <div class="card">
             <div class="title">
                 <h1 class="cut">Birgalikda buyurtma berish</h1>
             </div>
             <div class="text">
                 <p class="clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, id fugit. Id fugiat consectetur non perspiciatis autem reiciendis delectus quae.</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 <style scoped>

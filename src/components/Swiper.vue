@@ -23,7 +23,6 @@
 </template>
 
 <style scoped>
-<<<<<<< HEAD
 .home{
   padding: 5px;
   display: flex;
@@ -35,17 +34,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-=======
-.home {
-  padding: 0 30px;
-}
-.home .image {
-  max-width: 320px;
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
->>>>>>> 1e0c592927789dca12d802aea9c3a5003f91fa65
 }
 .image {
     width: 100% ;
@@ -57,13 +45,9 @@
   margin: 0 auto;
   overflow: hidden;
 }
-<<<<<<< HEAD
-
-=======
 @media (min-width: 320px) {
   .home .swiper {
     overflow: hidden;
   }
 }
->>>>>>> 1e0c592927789dca12d802aea9c3a5003f91fa65
 </style>

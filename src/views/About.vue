@@ -23,11 +23,10 @@
         </div>
       </div>
       <div class="deliver">
-        <Delivery />
+        
       </div>
       <div class="home_bottom">
-        <AboutModalVue />
-        <DeliveryModal />
+        
       </div>
       <div class="bottom_product">
         <Products />
@@ -76,9 +75,6 @@
 }
 </style>
 <script>
-import AboutModalVue from "@/components/AboutModal.vue";
-import Delivery from "@/components/Delivery.vue";
-import DeliveryModal from "@/components/DeliveryModal.vue";
 import Products from "@/components/Products.vue";
 export default {
   data() {
@@ -88,9 +84,8 @@ export default {
   },
   components: {
     AboutModalVue,
-    Delivery,
-    DeliveryModal,
     Products,
+    
   },
 };
 </script>

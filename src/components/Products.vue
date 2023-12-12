@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <button class="button" @click="openModal">Pizza</button> -->
     <div class="card_wrapper">
       <div class="row">
         <div class="card" @click="openModal">
@@ -43,7 +42,7 @@
         </div>
       </div>
     </div>
-    <transition name="modal">
+    <transition name="modal" class="dec_modal">
       <div v-if="isModalOpen" class="modal-container" @click="closeModal">
         <div class="modal" @click.stop>
           <div class="modal-content">
@@ -76,9 +75,7 @@
                 Nisi est neque libero odit sapiente, aut culpa quasi numquam
                 alias, doloremque rerum.
               </p>
-              <!-- <div class="btn">
-                <ModalBtn />
-              </div> -->
+            
             </div>
             <div class="modal_btn">
               <div class="basket">
@@ -137,11 +134,14 @@ export default {
 </script>
 
 <style scoped>
+.dec_modal{
+  transition: all 0.5 ease-in-out;
+}
 .modal-content .modal_btn {
   display: flex;
   justify-content: space-between;
- align-self: center;
- margin-top: 10px;
+  align-self: center;
+  margin-top: 10px;
 }
 .modal .value {
   display: flex;
@@ -243,7 +243,6 @@ export default {
 }
 
 .modal-open {
-  overflow: hidden;
-  transition: 0.8s;
+  overflow-y: hidden;
 }
 </style>

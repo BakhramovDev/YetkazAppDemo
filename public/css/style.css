@@ -5,11 +5,8 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Mazzard M';
+    scroll-behavior: smooth;
 }
 body{
-    /* background-color: #ffffff1b; */
     background-color: #ffffff;
 }
-/* body::-webkit-scrollbar-thumb{
-    display: none;
-} */

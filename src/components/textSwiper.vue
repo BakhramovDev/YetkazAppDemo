@@ -71,7 +71,6 @@ header{
         .home{
         display: flex;
         width: 100%;
-        display: flex;
         overflow-x: scroll;
         overflow-x: auto;
 

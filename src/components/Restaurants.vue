@@ -4,7 +4,7 @@
     <!-- big control -->
     <div class="card_wrapper">
       <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <router-link to="/About">
+      <router-link to="/Restaurants">
         <div class="card">
         <img class="top_image" src="../assets/reastoran1.jpg" alt="">
           <div class="card_nav">
@@ -73,7 +73,7 @@
         </div>        
       </router-link>
       <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <router-link to="/About">
+      <router-link to="/Restaurants">
         <div class="card">
         <img class="top_image" src="../assets/reastoran1.jpg" alt="">
           <div class="card_nav">
@@ -142,7 +142,7 @@
         </div>        
       </router-link>
       <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <router-link to="/About">
+      <router-link to="/Restaurants">
         <div class="card">
         <img class="top_image" src="../assets/reastoran1.jpg" alt="">
           <div class="card_nav">
@@ -211,7 +211,7 @@
         </div>        
       </router-link>
       <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <router-link to="/About">
+      <router-link to="/Restaurants">
         <div class="card">
         <img class="top_image" src="../assets/reastoran1.jpg" alt="">
           <div class="card_nav">
@@ -280,7 +280,7 @@
         </div>        
       </router-link>
       <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <router-link to="/About">
+      <router-link to="/Restaurants">
         <div class="card">
         <img class="top_image" src="../assets/reastoran1.jpg" alt="">
           <div class="card_nav">
@@ -349,7 +349,7 @@
         </div>        
       </router-link>
       <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <router-link to="/About">
+      <router-link to="/Restaurants">
         <div class="card">
         <img class="top_image" src="../assets/reastoran1.jpg" alt="">
           <div class="card_nav">
@@ -440,6 +440,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) ;
     border: 0.5px solid rgba(128, 128, 128, 0.498);
+    background-color: white;
     margin: 10px 0;
   }
   .top_image{
