@@ -3,47 +3,50 @@
     <!-- <button class="button" @click="openModal">Pizza</button> -->
     <div class="card_wrapper">
       <div class="row">
-        <div class="card" @click="openModal">
+        <div class="card" >
           <ProductCard />
         </div>
-        <div class="card" @click="openModal">
-          <ProductCard />
-        </div>
-      </div>
-      <div class="row">
-        <div class="card" @click="openModal">
-          <ProductCard />
-        </div>
-        <div class="card" @click="openModal">
+        <div class="card" >
           <ProductCard />
         </div>
       </div>
       <div class="row">
-        <div class="card" @click="openModal">
+        <div class="card" >
           <ProductCard />
         </div>
-        <div class="card" @click="openModal">
-          <ProductCard />
-        </div>
-      </div>
-      <div class="row">
-        <div class="card" @click="openModal">
-          <ProductCard />
-        </div>
-        <div class="card" @click="openModal">
+        <div class="card" >
           <ProductCard />
         </div>
       </div>
       <div class="row">
-        <div class="card" @click="openModal">
+        <div class="card" >
           <ProductCard />
         </div>
-        <div class="card" @click="openModal">
+        <div class="card" >
           <ProductCard />
         </div>
       </div>
+      <div class="row">
+        <div class="card" >
+          <ProductCard />
+        </div>
+        <div class="card" >
+          <ProductCard />
+        </div>
+      </div>
+      <div class="row">
+        <div class="card" >
+          <ProductCard />
+        </div>
+        <div class="card" >
+          <ProductCard />
+        </div>
+      </div>
+  <ProductsModal />
+
     </div>
-    <transition name="modal">
+    
+    <!-- <transition name="modal">
       <div v-if="isModalOpen" class="modal-container" @click="closeModal">
         <div class="modal" @click.stop>
           <div class="modal-content">
@@ -76,11 +79,14 @@
                 Nisi est neque libero odit sapiente, aut culpa quasi numquam
                 alias, doloremque rerum.
               </p>
-              <!-- <div class="btn">
-                <ModalBtn />
-              </div> -->
+             
             </div>
-            <div class="modal_btn">
+         
+          </div>
+        </div>
+      </div>
+    </transition> -->
+       <div class="modal_btn">
               <div class="basket">
                <p>{{ sum }}</p>
               </div>
@@ -90,15 +96,15 @@
                 <button @click="plus">+</button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </transition>
+           <div class="send_button">
+            <button>Savatga qo`shish</button>
+           </div>
   </div>
 </template>
 
 <script>
 import ProductCard from "@/components/ProductCard.vue";
+import ProductsModal from "@/components/ProductsModal.vue";
 export default {
   data() {
     return {
@@ -132,11 +138,24 @@ export default {
   },
   components: {
     ProductCard,
+    ProductsModal
   },
 };
 </script>
 
 <style scoped>
+.send_button{
+  padding: 20px 10px 20px 5px;
+
+}
+.send_button button{
+  width: 100%;
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  background: #e5fe04;
+  border-radius: 12px;
+}
 .modal-content .modal_btn {
   display: flex;
   justify-content: space-between;
@@ -148,7 +167,11 @@ export default {
   align-self: center;
   gap: 10px;
 }
-
+.value button{
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
 .close_btn {
   position: relative;
 }
@@ -172,13 +195,13 @@ export default {
   font-size: 16px;
   margin-top: 10px;
 }
-.modal-content .modal_img {
+/* .modal-content .modal_img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-.modal-content .product_type {
+} */
+/* .modal-content .product_type {
   font-size: 26px;
 }
 .modal_img img {
@@ -187,7 +210,7 @@ export default {
   align-items: center;
   width: 100%;
   object-fit: cover;
-}
+} */
 .card_wrapper {
   display: flex;
   gap: -50px;
@@ -199,12 +222,12 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-.modal-container-enter-active,
+/* .modal-container-enter-active,
 .modal-container-leave-active {
   transition: opacity 1.5s ease-out;
 }
 
-.modal-container-enter, .modal-container-leave-to /* .modal-container-leave-active in <2.1.8 */ {
+.modal-container-enter, .modal-container-leave-to  {
   opacity: 0;
 }
 
@@ -220,11 +243,11 @@ export default {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
-.modal {
+/* .modal {
   height: 100%;
-  /* overflow: scroll; */
+  
   width: 100%;
   background-color: white;
   padding: 20px;
@@ -234,7 +257,7 @@ export default {
   padding-bottom: 90px;
 }
 
-.modal-enter, .modal-leave-to /* .modal-leave-active in <2.1.8 */ {
+.modal-enter, .modal-leave-to {
   transform: translateY(100%);
 }
 
@@ -245,5 +268,5 @@ export default {
 .modal-open {
   overflow: hidden;
   transition: 0.8s;
-}
+} */
 </style>
